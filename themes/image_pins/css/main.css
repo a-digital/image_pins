@@ -1,0 +1,54 @@
+.pin-fields {
+	width: 100%;
+}
+.draggables {
+	margin: 5%;
+	position: relative;
+}
+.draggable_pins {
+	position: absolute;
+	background: #d95353;
+	width: 30px;
+	height: 30px;
+	margin-top: -15px;
+	margin-left: -15px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+}
+.draggable_pins:before {
+	content: "";
+	height: 12px;
+	width: 2px;
+	background-color: white;
+	position: absolute;
+	top: 29%;
+	left: 46%;
+}
+.draggable_pins:after {
+	content: "";
+	height: 2px;
+	width: 12px;
+	background-color: white;
+	position: absolute;
+	top: 46%;
+	left: 30%;
+}
+.pin-hover {
+	display: none;
+}
+.draggable_pins:hover .pin-hover {
+	display: block;
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	position: absolute;
+	margin-left: 30px;
+	padding: 6px;
+	width: max-content;
+	width: -moz-max-content;
+	width: -webkit-max-content;
+	
+}
+.pin-hidden {
+	display: none;
+}
